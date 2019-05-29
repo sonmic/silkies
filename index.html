@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Silkies fan page!</title>
+    <meta property="og:image" content="https://github.com/sonmic/silkiefanpage/blob/master/images/silkieslogo.png">
+    <link rel="shortcut icon" href="images/icon.jpg">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Linking jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Shrikhand|Julius+Sans+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img class="imglogo" alt="silkieslogo" src="images/silkieslogo.png">
+    </header>
+    <div id="wrapper">
+        <div class="image">
+            <img alt="silkies" src="images/silkies.jpg" width="600">
+        </div>
+        <h1>Silkie chickens :<br> the cuddly teddy bears of the poultry world.</h1>
+        <div class="content">
+            <div class="intro">
+                <p>If you're looking for a friendly, chatty, sweet-natured breed as a first chicken for your children or a companion for yourself, you may just have found your ideal. Silkie chickens are exactly as they look - funny, cuddly and very kind.</p>
+                <p>
+                    Silkies are gentle, kind birds who love company and adore being held. They tend to chatter away as they follow you around, which they will do once they're about six months old. They make wonderful mothers, in fact it sometimes seems their sole purpose
+                    in life is to be a mum! <a href="https://www.raising-happy-chickens.com/silkie-chickens.html">&nbsp;&nbsp;Read more</a></p>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <button class="btn btn-primary form-control" id="factButton"><b>Click here for a random Silkie fact!</b></button>
+                        <div class="well text-center">
+                            <div>
+                                <p id="factText">Here are 7 features that make Silkies different from other chicken breeds.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <p class="copyright"><i>Copyright disclaimer: I do not own the article nor the images featured on this page. All rights belong to it's rightful owner/owner's. No copyright infringement intended.</i></p>
+    </div>
+
+    <!-- Linking our JavaScript file -->
+    <script type="text/javascript" src="logic.js"></script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><b>⌃</b></button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
